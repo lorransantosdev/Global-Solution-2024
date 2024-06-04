@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     height: 100%;
     width: 100%;
 }
@@ -145,7 +145,70 @@ header {
 .header__container__more li, a:hover {
     background-color: white;
     color: #4BC0B5;
+} */
+
+
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__image {
+    width: 185px;
+}
+
+.nav-logo {
+    width: 100%;
+}
+
+#nav__list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
 
+.nav-item.active a {
+    color: rgb(51, 51, 51);
+    border-bottom: 3px solid #4BC0B5;
+}
 
+#mobile__btn {
+    display: none;
+}
+
+
+#mobile__menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1170px) {
+    #nav__list {
+        display: none;
+
+    }
+
+    #mobile__btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    
+}
