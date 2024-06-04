@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.header__nav {
+    margin: 7px 15px; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+    z-index: 1; 
+    display: flex;
+}
+.header__nav__image {
+    width: 180px;
+}
+
+.header__nav__image-logo {
+    width: 100%;
+    height: auto;
+}
+
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style: none;
+}
+
+.header__nav-menu li a {
+    text-decoration: none;
+    font-size: 1.0rem;
+    line-height: 14px;
+    color: #ffffff;
+    transition: color 0.3s;
+
+}
+
+ul a:hover {
+    color: #1b1d1c;
+}
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    max-width: 1920px; 
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+    
+
+.header__container {
+    width: 100%;
+    height: 950px;
+    max-width: 1920px;
+    background-image: url(/public/assets/images/header__banner-image-sea.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    box-sizing: border-box;
+}
+
+
+.header__container__title, .header__container__more-click a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+
+.header__container__title {
+    margin-top: 18%;
+    box-sizing: border-box;
+}
+
+
+.header__container__title h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.header__container__title h2 {
+    margin-top: -30px;
+    font-size: 5rem;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.7);
+    filter: blur(2px);
+}
+
+
+.header__container__title h3 {
+    position: relative;
+    margin-top: -5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    z-index: 1;
+}
+
+
+
+.header__container__more-click {
+    display: flex;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 10px;
+}
+
+
+.header__container__more-click a{
+    color: white;
+    padding: 15px 25px;
+    background-color: #4BC0B5;
+    border-radius: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.header__container__more li, a:hover {
+    background-color: white;
+    color: #4BC0B5;
+}
+
+
+

@@ -51,4 +51,5 @@ table {
 body {
     font-family: "Roboto", sans-serif;
     background-color: white;
+    box-sizing: border-box;
 }
