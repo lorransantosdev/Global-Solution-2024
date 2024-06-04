@@ -16,20 +16,32 @@
 
     <header>
         <div class="header__container">
-            <nav>
-                <div class="header__nav">
-                    <div class="header__nav__image">
-                        <img class="header__nav__image-logo"  src="/public/assets/images/logotipo-cleanSea.svg" alt="Logotipo da CleanSea">
+            <nav id="nav-bar">
+                    <div class="nav__image">
+                        <img class="nav-logo"  src="/public/assets/images/logotipo-cleanSea.svg" alt="Logotipo da CleanSea">
                     </div>
                     
-                    <ul class="header__nav-menu">
-                        <li class="nav-item"><a href="#desafios" class="nav-link">Desafios</a></li>
-                        <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
-                        <li class="nav-item"><a href="#objetivos" class="nav-link">Objetivos</a></li>
-                        <li class="nav-item"><a href="#sustentabilidade" class="nav-link">Sustentabilidade</a></li>
-                        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                    <ul class="nav__list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#desafios" class="nav-link">Desafios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#produtos" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#objetivos" class="nav-link">Objetivos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sustentabilidade" class="nav-link">Sustentabilidade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
                     </ul>
-                </div>
+               
             </nav>
 
             <div class="header__container__title">
@@ -38,195 +50,210 @@
                 <h2>CLEANSEA</h2>
 
                 <ul>
-                    <li class="header__container__more-click"><a href="#desafios">SAIBA MAIS</a></li>
+                    <li class="header__click">
+                        <a href="#contato">SAIBA MAIS</a>
+                    </li>
                 </ul>
+
             </div>
 
         </div>
+
     </header>
 
     <main>
+
         <div class="main__container">
+
             <section id="desafios" class="section__desafios">
+
                 <div class="section__desafios__container">
-                    <div class="section__desafios__container-titles">
-                        <h2 class="section__desafios-title">DESAFIOS</h2>
-                        <h3 class="section__desafios-subtitle">AS AMEAÇAS DOS MICROPLÁSTICOS</h3>
+                    <div class="desafios__container-titles">
+                        <h2 class="desafios-title">DESAFIOS</h2>
+                        <h3 class="desafios-subtitle">AS AMEAÇAS DOS MICROPLÁSTICOS</h3>
                     </div>
                 
-                    <div class="section__desafios__container-text">
-                        <div class="section__desafios-text">
+                    <div class="desafios__container-text">
+                        <div class="desafios-text">
                             <p>Os <span class="highlight">microplásticos</span> são <span class="highlight">pequenas partículas</span> de plástico, muitas vezes <span class="highlight">invisíveis</span> a olho nu, que resultam da degradação de plásticos maiores ou são produzidos intencionalmente para uso em produtos como cosméticos e roupas sintéticas. Esses fragmentos representam uma <span class="highlight">ameaça significativa</span> aos <span class="highlight">ecossistemas marinhos</span> e à <span class="highlight">saúde humana</span> devido a vários fatores:</p>
-                            <a href="#" class="learn-more">Saiba mais.</a>
+                            <a href="https://mundoeducacao.uol.com.br/quimica/microplasticos.htm" class="learn-more">Saiba mais.</a>
                         </div>
 
-                        <div class="section__desafios__container-image">
+                        <div class="desafios__container-image">
                             <img src="/public/assets/images/microplasticos.jpg" alt="Imagem de microplásticos">
                         </div>
                     </div>
 
-                    <div class="section__desafios__container-circles">
-                        <div class="desafios__circle">Impacto na Vida Marinha</div>
-                        <div class="desafios__circle">Bioacumulação</div>
-                        <div class="desafios__circle">Dispersão Global</div>
-                        <div class="desafios__circle">Persistência Ambiental</div>
+                    <div class="desafios__container-circles">
+                        <div class="desafios-circle">Impacto na Vida Marinha</div>
+                        <div class="desafios-circle">Bioacumulação</div>
+                        <div class="desafios-circle">Dispersão Global</div>
+                        <div class="desafios-circle">Persistência Ambiental</div>
                     </div>
                 </div>
             </section>
 
             <section id="produtos" class="section__produtos">
                 <div class="section__produtos__container">
-                    <div class="section__produtos__container-titles">
-                        <h2 class="section__produtos-title">PRODUTOS</h2>
-                        <h3 class="section__produtos-subtitle">A TECNOLOGIA POR TRÁS DO PROJETO</h3>
+                    <div class="produtos__container-titles">
+                        <h2 class="produtos-title">PRODUTOS</h2>
+                        <h3 class="produtos-subtitle">A TECNOLOGIA POR TRÁS DO PROJETO</h3>
                     </div>
                     
-                    <div class="section__produtos__content">
-                        <div class="section__produtos__content-left">
-                            <div class="section__produtos__content-left-item">
+                    <div class="produtos__content">
+                        <div class="produtos__left">
+                            <div class="produtos__left-item">
                                 <h4>1. BOIAS INTELIGENTES</h4>
                                 <p>Equipadas com <span class="highlight">sensores</span> e <span class="highlight">sistemas de comunicação</span>, as <span class="highlight">boias inteligentes</span> transmitem dados em tempo real para nossa central de monitoramento.</p>
                             </div>
 
-                            <div class="section__produtos__content-left-item">
+                            <div class="produtos__left-image">
                                 <img src="/public/assets/images/sensor-de-fluorescencia.svg" alt="Ícone de um Sensor de Fluorescência">
                             </div>
 
-                            <div class="section__produtos__content-left-item">
+                            <div class="produtos__left-item">
                                 <h4>3. PLATAFORMA DE DADOS EM NUVEM</h4>
                                 <p>Todos os <span class="highlight">dados coletados</span> pelos sensores e boias são <span class="highlight">armazenados e processados</span> em uma plataforma de dados em nuvem. Esta plataforma permite análises detalhadas e relatórios que ajudam na tomada de decisões e na formulação de políticas ambientais eficazes.</p>
                             </div>
 
-                            <div class="section__produtos__content-left-item">
-                                <img src="/public/assets/images/aplicativo-do-projeto.svg" alt="Ícone de um Celular e Aplicativo do Projeto">
+                            <div class="produtos__left-image">
+                                <img src="/public/assets/images/aplicativo-do-projeto.svg" alt="Ícone de um Celular com o Aplicativo do Projeto">
                             </div>
 
-                            <div class="section__produtos__content-left-item">
+                            <div class="produtos__left-item">
                                 <h4>5. INTELIGÊNCIA ARTIFICIAL INTEGRADA</h4>
                                 <p>Toda as análises dos dados coletados, serão realizadas e melhoradas por uma IA, tornando os resultados mais precisos e aperfeiçoados.</p>
                             </div>
                         </div>
 
-                        <div class="section__produtos__content-divider"></div>
+                        <div class="produtos__divider"></div>
 
-                        <div class="section__produtos__content-right">
-                            <div class="section__produtos__content-right-item">
+                        <div class="produtos__right">
+                            <div class="produtos__right-image">
                                 <img src="/public/assets/images/boia-flutuante.svg" alt="Ícone de uma Boia Flutuante e Inteligente">
                             </div>
 
-                            <div class="section__produtos__content-right-item">
+                            <div class="produtos__right-item">
                                 <h4>2. SENSORES DE FLUORESCÊNCIA</h4>
                                 <p>Detectam a <span class="highlight">presença</span> e a <span class="highlight">concentração</span> de microplásticos na água. Esses sensores são altamente <span class="highlight">sensíveis</span> e podem identificar <span class="highlight">partículas minúsculas</span>, permitindo um monitoramento preciso e em tempo real.</p>
                             </div>
 
-                            <div class="section__produtos__content-right-item">
+                            <div class="produtos__right-image">
                                 <img src="/public/assets/images/nuvem-de-computacao.svg" alt="Ícone de uma Nuvem de Computação">
                             </div>
 
-                            <div class="section__produtos__content-right-item">
+                            <div class="produtos__right-item">
                                 <h4>4. APLICATIVO "CLEANSEA"</h4>
                                 <p>Nosso <span class="highlight">aplicativo móvel</span> permite que os cidadãos acompanhem o <span class="highlight">nível de poluição</span> por microplásticos em <span class="highlight">diferentes regiões</span> através de um <span class="highlight">mapa interativo</span>. Os usuários recebem notificações em tempo real, podem contribuir com dados, reportar poluição e participar de campanhas de limpeza, promovendo a conservação marinha.</p>
                             </div>
 
-                            <div class="section__produtos__content-right-item">
+                            <div class="produtos__right-image">
                                 <img src="/public/assets/images/aplicativo-do-projeto.svg" alt="Ícone do Aplicativo CleanSea">
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </section>
 
             <section id="objetivos" class="section__objetivos">
-                <div class="section__objetivos-titles">
-                    <h2 class="section__objetivos-title">OBJETIVOS</h2>
-                    <h3 class="section__objetivos-subtitle">OBJETIVOS PARA UM OCEANO MAIS LIMPO</h3>
+                <div class="section__objetivos__titles">
+                    <h2 class="objetivos-title">OBJETIVOS</h2>
+                    <h3 class="objetivos-subtitle">OBJETIVOS PARA UM OCEANO MAIS LIMPO</h3>
                 </div>
 
-                <div class="section__objetivos__content">
-                    <p class="section__objetivos__content-description">
+                <div class="section__objetivos__container">
+                    <p class="objetivo-description">
                         A <span class="highlight">detecção</span> e a <span class="highlight">remoção</span> de <span class="highlight">microplásticos</span> dos oceanos são tarefas complexas devido ao seu <span class="highlight">tamanho minúsculo</span>, cores diversas que se camuflam com o tom azulado da água e à sua dispersão ampla. O monitoramento dos microplásticos será realizado, a princípio, ao longo da <span class="highlight">costa brasileira</span>, com intuito de mostrar como os <span class="highlight">microplásticos</span> estão afetando a <span class="highlight">biodiversidade</span> e as comunidades costeiras no Brasil.
                     </p>
 
-                    <div class="section__objetivos__content-texts">
-                        <div class="objetivos">
-                            <p class="objetivos__title"><span class="icone__correto"><img src="/public/assets/images/assinale-dentro-do-circulo.svg" alt="Icone de Correto"></span> Mapear e Monitorar</p>
-                            <p class="objetivos__description">Implementar uma rede de sensores ao longo das costas brasileiras.</p>
+                    <div class="objetivos__content">
+                        <div class="objetivo__text">
+                            <p class="objetivo-title"><span class="icone__correto"><img src="/public/assets/images/assinale-dentro-do-circulo.svg" alt="Icone de Correto"></span> Mapear e Monitorar</p>
+
+                            <p class="objetivo-description">Implementar uma rede de sensores ao longo das costas brasileiras.</p>
                         </div>
 
-                        <div class="objetivos">
-                            <p class="objetivos__title"><span class="icone__correto"><img src="/public/assets/images/assinale-dentro-do-circulo.svg" alt="Icone de Correto"></span> Dados Acessíveis</p>
-                            <p class="objetivos__description">Fornecer acesso a dados em tempo real sobre a poluição por microplásticos.</p>
+                        <div class="objetivo__text">
+                            <p class="objetivo-title"><span class="icone__correto"><img src="/public/assets/images/assinale-dentro-do-circulo.svg" alt="Icone de Correto"></span> Dados Acessíveis</p>
+
+                            <p class="objetivo-description">Fornecer acesso a dados em tempo real sobre a poluição por microplásticos.</p>
                         </div>
                         
-                        <div class="objetivos">
-                            <p class="objetivos__title"><span class="icone__correto"><img src="/public/assets/images/assinale-dentro-do-circulo.svg" alt="Icone de Correto"></span> Engajamento Comunitário</p>
-                            <p class="objetivos__description">Conscientizar e gerar movimentos de ação comunitária para reduzir o uso de plásticos e o descarte indevido.</p>
+                        <div class="objetivo__text">
+                            <p class="objetivo-title"><span class="icone__correto"><img src="/public/assets/images/assinale-dentro-do-circulo.svg" alt="Icone de Correto"></span> Engajamento Comunitário</p>
+
+                            <p class="objetivo-description">Conscientizar e gerar movimentos de ação comunitária para reduzir o uso de plásticos e o descarte indevido.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="objetivos" class="section__objetivos">
-                <div class="section__objetivos-titles">
-                    <h2 class="objetivos__title">QUEM ESTAMOS AJUDANDO</h2>
-                    <h3 class="objetivos__subtitle">IMPACTANDO COMUNIDADES E ECOSSISTEMAS</h3>
+
+            <section id="public" class="section__public">
+                <div class="section__public__titles">
+                    <h2 class="public-title">QUEM ESTAMOS AJUDANDO</h2>
+                    <h3 class="public-subtitle">IMPACTANDO COMUNIDADES E ECOSSISTEMAS</h3>
                 </div>
 
-                <div class="section__objetivos__content">
-                    <div class="objetivos__item">Comunidades Costeiras</div>
-                    <div class="objetivos__item">Pescadores e Indústrias de Pesca</div>
-                    <div class="objetivos__item">Pesquisadores e Cientistas</div>
-                    <div class="objetivos__item">Autoridades e Policymakers</div>
+                <div class="section__public__container">
+                    <div class="public-item">Comunidades Costeiras</div>
+                    <div class="public-item">Pescadores e Indústrias de Pesca</div>
+                    <div class="public-item">Pesquisadores e Cientistas</div>
+                    <div class="public-item">Autoridades e Policymakers</div>
                 </div>
             </section>
 
             <section id="sustentabilidade" class="section__sustentabilidade">
-                <div class="section__sustentabilidade__titles">
+                <div class="secton__sustentabilidade__titles">
                     <h2 class="sustentabilidade-title">SUSTENTABILIDADE</h2>
                     <h3 class="sustentabilidade-subtitle">POR UM FUTURO MAIS LIMPO</h3>
                 </div>
 
-                <div class="section__sustentabilidade__content">
-                    <div class="section__sustentabilidade__content-beneficios">
-                        <h4 class="sustentabilidade__content-beneficios-title">BENEFÍCIOS</h4>
-                        <div class="beneficios__item">Saúde dos Ecossistemas</div>
-                        <div class="beneficios__item">Dados de Qualidade pelo App</div>
-                        <div class="beneficios__item">Economia Sustentável</div>
+                <div class="section__sustentabilidade__container">
+                    <div class="sustentabilidade__content-beneficios">
+                        <h4 class="sustentabilidade__beneficios-title">BENEFÍCIOS</h4>
+                        <div class="beneficio-item">Saúde dos Ecossistemas</div>
+                        <div class="beneficio-item">Dados de Qualidade pelo App</div>
+                        <div class="beneficio-item">Economia Sustentável</div>
                     </div>
 
-                    <div class="section__sustentabilidade__content-vida-diaria">
-                        <h4 class="sustentabilidade__content-vida-diaria-title">TRANSFORMANDO A VIDA DIÁRIA</h4>
-                        <div class="vida-diaria__item">Educação e Conscientização</div>
-                        <div class="vida-diaria__item">Ações de Limpeza</div>
-                        <div class="vida-diaria__item">Saúde Pública a Curto, Médio e Longo Prazo</div>
+                    <div class="sustentabilidade__content-vidadiaria">
+                        <h4 class="sustentabilidade__content-vidadiaria-title">TRANSFORMANDO A VIDA DIÁRIA</h4>
+                        <div class="vidadiaria-item">Educação e Conscientização</div>
+                        <div class="vidadiaria-item">Ações de Limpeza</div>
+                        <div class="vidadiaria-item">Saúde Pública a Curto, Médio e Longo Prazo</div>
                     </div>
 
-                    <div class="sustentabilidade__outros-beneficios">
-                        <div class="outro-beneficio__item">Facilidade no combate à poluição</div>
-                        <div class="outro-beneficio__item">Condições para a Pesca e Turismo</div>
+                    <div class="sustentabilidade__outrosbeneficios">
+                        <div class="outrobeneficio-item">Facilidade no combate à poluição</div>
+                        <div class="outrobeneficio-item">Condições para a Pesca e Turismo</div>
                     </div>
                 </div>
             </section>
 
             <section id="contato" class="section__contato">
                 <div class="section__contato__container">
-                    <div class="section__contato__content">
-                        <div class="section__contato__content-title">
+                    <div class="contato__content-texts">
+                        <div class="contato__title">
                             <img src="/public/assets/images/coroa.svg" alt="Ícone Exclusivo para Assinantes">
-                            <h2 class="contato__content-title">EXCLUSIVO PARA ASSINANTES</h2>
+                            <h2 class="contato-title">EXCLUSIVO PARA ASSINANTES</h2>
                         </div>
-                        <p class="contato__text">
+                        <p class="contato-text">
                             Os assinantes do CleanSea terão acesso exclusivo aos dados, relatórios e coordenadas das áreas mais afetadas.
                         </p>
-                        <p class="contato__text">
+                        <p class="contato-text">
                             Além disso, obterão descontos com todos os nossos parceiros.
                         </p>
-                        <p class="contato__text">
+                        <p class="contato-text">
                             PARA SABER MAIS OU SE TORNAR UM APOIADOR ENTRE EM CONTATO AO LADO:
                         </p>
                     </div>
 
-                    <div class="section__contato__container-form">
+                    <div class="contato__content-form">
                         <form class="contato__form">
                             <div class="form-group">
                                 <label for="nome" class="form-label">NOME:</label>
