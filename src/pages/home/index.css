@@ -373,7 +373,6 @@ main {
     font-size: 1.5rem;
     font-weight: 600;
     color: #4BC0B5;
-    text-transform: uppercase;
     margin-bottom: 10px;
 
 }
@@ -473,18 +472,21 @@ main {
 .section__objetivos {
     padding: 50px 0;
     background-color: white;
-    text-align: center;
+    text-align: start;
 }
 
 .section__objetivos__titles {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .objetivos-title {
     font-size: 1.5rem;
     font-weight: 600;
     color: #4BC0B5;
-    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -499,7 +501,18 @@ main {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
+
+
+.objetivo__description-text {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: start;
+
+}
+
 
 .objetivo-description {
     font-size: 18px;
@@ -514,20 +527,22 @@ main {
 }
 
 .objetivos__content {
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .objetivo__text {
     flex: 1;
-    max-width: 30%;
+    width: 100%;
     margin: 0 10px 20px;
     text-align: left;
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .objetivo__text img {
