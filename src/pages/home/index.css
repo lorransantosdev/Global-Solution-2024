@@ -179,12 +179,12 @@ main {
 
 
 .main__container {
-    padding: 0px 20px;
+    padding: 0px 40px;
 }
 
 
 .section__desafios {
-    padding: 40px 0;
+    padding: 60px 0;
     background: white;
 }
 
@@ -289,7 +289,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 
@@ -344,6 +344,7 @@ main {
         font-size: 1.2rem;
         width: 200px;
         height: 200px;
+        gap: 60px;
     }
 }
 
@@ -353,6 +354,7 @@ main {
         font-size: 0.9rem;
         width: 150px;
         height: 150px;
+        gap: 40px;
     }
 }
 
@@ -360,7 +362,7 @@ main {
 
 
 .section__produtos {
-    padding: 10% 0;
+    padding: 60px 0;
     background-color: white;
 }
 
@@ -479,7 +481,7 @@ main {
 
 
 .section__objetivos {
-    padding: 50px 0;
+    padding: 60px 0;
     background-color: white;
     text-align: start;
 }
@@ -507,9 +509,8 @@ main {
 }
 
 .section__objetivos__container {
-    max-width: 1920px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -646,7 +647,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 
@@ -687,6 +688,7 @@ main {
         font-size: 1.2rem;
         width: 200px;
         height: 200px;
+        gap: 60px;
     }
 }
 
@@ -704,6 +706,7 @@ main {
         font-size: 0.9rem;
         width: 150px;
         height: 150px;
+        gap: 40px;
     }
 }
 
@@ -757,7 +760,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 
@@ -789,7 +792,6 @@ main {
     background-color: white;
     color: #4BC0B5;
     box-shadow: 0 2px 10px rgb(66, 173, 163);
-
 }
 
 
@@ -814,6 +816,7 @@ main {
         font-size: 1.2rem;
         width: 200px;
         height: 200px;
+        gap: 60px; 
     }
 }
 
@@ -840,14 +843,15 @@ main {
         font-size: 0.9rem;
         width: 150px;
         height: 150px;
+        gap: 40px;
     }
 }
 
 
 
 .section__contato {
-    padding: 50px 20px;
-    background-color: #f8f9fa;
+    padding: 70px 0px;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -858,11 +862,10 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     width: 100%;
-    background-color: white;
+    background-color: rgb(211, 211, 211);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
