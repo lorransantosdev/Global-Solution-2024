@@ -56,7 +56,7 @@ body {
 }
 
 
-@media (max-width: 1170px) {
+@media (max-width: 1200px) {
     #navbar,
     #nav__list {
         display: flex;
@@ -341,9 +341,18 @@ main {
     }
 
     .desafios-circle {
+        font-size: 1.2rem;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .desafios-circle {
+        font-size: 0.9rem;
         width: 150px;
         height: 150px;
-        font-size: 16px;
     }
 }
 
@@ -673,16 +682,14 @@ main {
         font-size: 16px;
         padding: 15px;
     }
-}
 
-@media (max-width: 992px) {
-    .public-item {
-        width: 150px;
-        height: 150px;
-        font-size: 14px;
-        padding: 12px;
+    .public-circle {
+        font-size: 1.2rem;
+        width: 200px;
+        height: 200px;
     }
 }
+
 
 @media (max-width: 768px) {
     .public-title {
@@ -693,27 +700,240 @@ main {
         font-size: 20px;
     }
 
-    .public-item {
-        width: 130px;
-        height: 130px;
-        font-size: 12px;
-        padding: 10px;
+    .public-circle {
+        font-size: 0.9rem;
+        width: 150px;
+        height: 150px;
     }
 }
 
-@media (max-width: 576px) {
-    .public-title {
-        font-size: 24px;
+
+.section__sustentabilidade {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.sustentabilidade__titles {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.sustentabilidade-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4BC0B5;
+    margin-bottom: 10px;
+}
+
+.sustentabilidade-subtitle {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: black;
+}
+
+.sustentabilidade__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sustentabilidade__content-beneficios,
+.sustentabilidade__content-vidadiaria {
+    width: 48%;
+}
+
+.sustentabilidade__beneficios-title,
+.sustentabilidade__vidadiaria-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sustentabilidade__beneficios__circles,
+.sustentabildade__vidadiaria__circles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+
+.beneficio-circle,
+.vidadiaria-circle {
+    width: 250px;
+    height: 250px;
+    background-color: #4BC0B5;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(0, 10, 8, 0.6);
+    transition: background 0.7s;
+}
+    
+.beneficio-circle:hover {
+    background-color: white;
+    color: #4BC0B5;
+    box-shadow: 0 2px 10px rgb(66, 173, 163);
+}
+
+.vidadiaria-circle:hover {
+    background-color: white;
+    color: #4BC0B5;
+    box-shadow: 0 2px 10px rgb(66, 173, 163);
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .sustentabilidade__container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .public-subtitle {
-        font-size: 18px;
+    .sustentabilidade__content-beneficios {
+        margin-bottom: 30px;
     }
 
-    .public-item {
-        width: 100px;
-        height: 100px;
-        font-size: 10px;
-        padding: 8px;
+    .sustentabilidade__content-beneficios,
+    .sustentabilidade__content-vidadiaria {
+        width: 90%;
     }
+
+    .beneficio-circle,
+    .vidadiaria-circle {
+        font-size: 1.2rem;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sustentabilidade__content-beneficios {
+        margin-bottom: 30px;
+    }
+
+    .sustentabilidade-title {
+        font-size: 1.8rem;
+    }
+
+    .sustentabilidade-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .sustentabilidade__beneficios-title,
+    .sustentabilidade__vidadiaria-title {
+        font-size: 1.3rem;
+    }
+
+    .beneficio-circle,
+    .vidadiaria-circle {
+        font-size: 0.9rem;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+.section__contato {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__contato__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato__content-texts {
+    flex: 1;
+    padding: 20px;
+}
+
+.contato__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contato__title img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.contato-title {
+    font-size: 24px;
+    color: #007b7f;
+}
+
+.contato-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contato__content-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007b7f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #005f60;
 }
