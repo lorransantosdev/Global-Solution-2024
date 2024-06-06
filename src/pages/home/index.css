@@ -5,10 +5,20 @@ html, body {
 
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    min-height: 100vh;
+}
+
+
+#desafios,
+#produtos,
+#objetivos,
+#public,
+#sustentabilidade,
+#contato {
+    padding: 80px 0;
 }
 
 
@@ -146,10 +156,10 @@ header {
 
 
 .header__click {
-    display: flex;
-    align-items: center;
     margin-top: 180px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -178,12 +188,12 @@ main {
 
 
 .main__container {
-    padding: 0px 100px;
+    padding: 0 100px;
 }
 
 
 .section__desafios {
-    padding: 60px 0;
+    padding: 0;
     background: white;
 }
 
@@ -199,11 +209,11 @@ main {
 
 
 .desafios__titles {
+    margin-bottom: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 35px;
 }
 
 
@@ -288,14 +298,14 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 70px;
     flex-wrap: wrap;
 }
 
 
 .desafios-circle {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     background: #4BC0B5;
     color: white;
     border-radius: 50%;
@@ -316,7 +326,7 @@ main {
     box-shadow: 0 2px 10px rgb(66, 173, 163);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
     .desafios__container-text {
         display: flex;
         flex-direction: column;
@@ -343,7 +353,7 @@ main {
         font-size: 1.2rem;
         width: 200px;
         height: 200px;
-        gap: 60px;
+        gap: 50px;
     }
 }
 
@@ -353,7 +363,7 @@ main {
         font-size: 0.9rem;
         width: 150px;
         height: 150px;
-        gap: 40px;
+        gap: 30px;
     }
 }
 
@@ -361,7 +371,7 @@ main {
 
 
 .section__produtos {
-    padding: 100px 0;
+    padding: 0;
     background-color: white;
 }
 
@@ -453,7 +463,7 @@ main {
     color: #4BC0B5;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
     .produtos__content {
         flex-direction: column;
     }
@@ -482,7 +492,7 @@ main {
 
 
 .section__objetivos {
-    padding: 100px 0;
+    padding: 0;
     background-color: white;
     text-align: start;
 }
@@ -579,7 +589,7 @@ main {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
     .objetivos__content {
         flex-direction: column;
         align-items: center;
@@ -616,7 +626,7 @@ main {
 
 
 .section__public {
-    padding: 60px 0;
+    padding: 0;
     background-color: white;
     margin-bottom: 100px;
 
@@ -646,16 +656,16 @@ main {
 
 .public__circles {
     width: 100%;
+    gap: 70px;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
 }
 
 
 .public-circle {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     background: #4BC0B5;
     color: white;
     border-radius: 50%;
@@ -677,7 +687,7 @@ main {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
     .public-item {
         width: 180px;
         height: 180px;
@@ -689,7 +699,7 @@ main {
         font-size: 1.2rem;
         width: 200px;
         height: 200px;
-        gap: 60px;
+        gap: 50px;
     }
 }
 
@@ -707,13 +717,13 @@ main {
         font-size: 0.9rem;
         width: 150px;
         height: 150px;
-        gap: 40px;
+        gap: 30px;
     }
 }
 
 
 .section__sustentabilidade {
-    padding: 60px 0;
+    padding: 0;
     background-color: white;
 }
 
@@ -759,17 +769,17 @@ main {
 .sustentabilidade__beneficios__circles,
 .sustentabildade__vidadiaria__circles{
     width: 100%;
+    gap: 70px;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap;
 }
 
 
 .beneficio-circle,
 .vidadiaria-circle {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     background-color: #4BC0B5;
     color: white;
     border-radius: 50%;
@@ -797,7 +807,7 @@ main {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
     .sustentabilidade__container {
         flex-direction: column;
         align-items: center;
@@ -817,7 +827,7 @@ main {
         font-size: 1.2rem;
         width: 200px;
         height: 200px;
-        gap: 60px; 
+        gap: 50px; 
     }
 }
 
@@ -844,14 +854,14 @@ main {
         font-size: 0.9rem;
         width: 150px;
         height: 150px;
-        gap: 40px;
+        gap: 30px;
     }
 }
 
 
 
 .section__contato {
-    padding: 70px 0px;
+    padding: 0;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -859,15 +869,15 @@ main {
 }
 
 .section__contato__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: auto;
     background-color: rgb(245, 245, 245);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contato__content-texts {
