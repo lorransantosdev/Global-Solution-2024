@@ -53,8 +53,14 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: white;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
 }
