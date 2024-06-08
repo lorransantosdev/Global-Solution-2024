@@ -1,0 +1,357 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.login__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/assets/images/header__banner-image-sea.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
+    box-sizing: border-box;
+}
+
+.login__container::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.login__content {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.login__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo {
+    width: 400px;
+    height: auto;
+}
+
+.login__texts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    text-decoration: none;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    color: #4BC0B5;
+}
+
+.login-subtitle {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.login__card {    
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(75, 192, 181, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.login__form {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.form-usuario,
+.form-senha {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-usuario label,
+.form-senha label {
+    color: #4BC0B5;
+    margin-bottom: 10px;
+}
+
+.form-usuario input,
+.form-senha input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(193, 195, 197);
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #4BC0B5;
+    color: white;
+    font-size: 14pt;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 10px 40px rgba(75, 192, 181, 0.5);
+}
+
+.btn-login:hover {
+    background-color: white;
+    color: #4BC0B5;
+}
+
+
+@media (max-width: 1126px) {
+    .login__content {
+        width: 50%;
+        height: auto;
+    }
+
+    .login__image {
+        margin-bottom: 20px;
+    }
+    .image-logo {
+        margin: 0;
+        width: 250px
+    }
+
+    .login-title {
+        font-size: 1.5rem;
+    }
+
+    .login-subtitle {
+        font-size: 1rem;
+    }
+
+    .login__card {
+        width: 70%;
+        padding: 10px;
+    }
+
+    .btn-login {
+        font-size: 0.8rem;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    input, label {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 820px) {
+    .login__content {
+        justify-content: center;
+        width: 30%;
+        height: auto;
+    }
+
+    .login__image {
+        margin-bottom: 20px;
+    }
+    .image-logo {
+        margin: 0;
+        width: 200px
+    }
+
+    .login-title {
+        font-size: 1.2rem;
+    }
+
+    .login-subtitle {
+        font-size: 0.5rem;
+        margin-top: 5px;
+    }
+
+    .login__card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .btn-login {
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+
+    input, label {
+        font-size: 0.1rem;
+        padding: 12px;
+    }
+
+    .form-usuario input,
+    .form-senha input {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .login__content {
+        justify-content: center;
+        width: 30%;
+        height: auto;
+    }
+
+    .login__image {
+        margin-bottom: 20px;
+    }
+    .image-logo {
+        margin: 0;
+        width: 150px
+    }
+
+    .login-title {
+        font-size: 1rem;
+    }
+
+    .login-subtitle {
+        font-size: 0.4rem;
+        margin-top: 5px;
+    }
+
+    .login__card {
+        width: 90%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .btn-login {
+        font-size: 0.4rem;
+        padding: 7px;
+    }
+    input, label {
+        font-size: 0.1rem;
+        padding: 12px;
+    }
+
+    .form-usuario,
+    .form-senha {
+        padding: 2px;
+        font-size: 0.4rem;
+        margin-bottom: 4px;
+    }
+
+    .form-usuario input,
+    .form-senha input {
+        padding: 8px;
+        font-size: 0.4rem;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 355px) {
+    .login__content {
+        justify-content: center;
+        width: 27%;
+        height: auto;
+    }
+
+    .login__image {
+        margin-bottom: 5px;
+    }
+    .image-logo {
+        margin: 0;
+        width: 75px
+    }
+
+    .login-title {
+        font-size: 0.5rem;
+    }
+
+    .login-subtitle {
+        font-size: 0.22rem;
+        margin-top: 3px;
+    }
+
+    .login__card {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .btn-login {
+        font-size: 0.2rem;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    input, label {
+        font-size: 0.1rem;
+        padding: 6px;
+        
+    }
+
+    label {
+    margin-bottom: 3px;
+    }
+
+    .form-usuario,
+    .form-senha {
+        padding: 1px;
+        font-size: 0.3rem;
+        margin-bottom: 1px;
+    }
+
+    .form-usuario input,
+    .form-senha input {
+        padding: 3px;
+        font-size: 0.2rem;
+        margin-bottom: 2px;
+    }
+}
