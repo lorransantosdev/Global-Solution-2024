@@ -275,24 +275,6 @@ main {
 }
 
 
-.desafios__image {
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-}
-
-
-.desafios__image img {
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-}
-
 
 .desafios__container-circles {
     width: 100%;
@@ -1105,4 +1087,45 @@ footer {
     .footer__content__nav, .footer__social {
         margin-bottom: 20px;
     }
+}
+
+.desafios__image {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.desafios__image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    display: none; /* Oculta todas as imagens inicialmente */
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel__button--prev {
+    left: 10px;
+}
+
+.carousel__button--next {
+    right: 10px;
+}
+
+.carousel {
+    position: relative;
 }
