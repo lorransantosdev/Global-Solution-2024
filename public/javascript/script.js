@@ -65,7 +65,7 @@ function login() {
     } else {
         alert(`Seja Bem-Vindo, ${usuario}! Estamos há mais um passo de um futuro e oceano mais limpo e sustentável!`);
 
-        window.location.href = "/src/pages/home/index.html";
+        window.location.href = "src/pages/home/index.html";
     }
 }
 
